@@ -7,5 +7,72 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <section class="bg-container">
+        <div class="logo__container">
+          <img src="./assets/images/odin-lined.png" alt="odin-logo" />
+          <h4>ODIN</h4>
+        </div>
+        <p class="logo__container--photo-credit">
+          Image from <a href="http://wallpaperswide.com">wallpaperswide</a>
+        </p>
+      </section>
+      <section class="form-container">
+        <p class="form-container__primary-text">
+          This is not a real online service! You know you need something like
+          this in your life to help you realise your deepest dreams. Signup now
+          to get started. <br />
+          You know you want to.
+        </p>
+        <h4 class="form-container__secondary-text mt--50 mb--50">
+          Let's do this!
+        </h4>
+        <form action="post">
+          <div class="form-group-1">
+            <div>
+              <label for="firstname">FIRST NAME</label>
+              <input type="text" id="firstname" name="firstname" />
+            </div>
+            <div>
+              <label for="lastname">LAST NAME</label>
+              <input type="text" name="lastname" id="lastname" class="focus" />
+            </div>
+            <div>
+              <label for="emaail">EMAIL</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div>
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" name="phone" id="phone" />
+            </div>
+            <div>
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div>
+              <label for="confirmPassword">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+              />
+            </div>
+          </div>
+          <div class="form-group-2 mt--50">
+            <button
+              type="button"
+              class="create-account-btn create-account-btn--text mb--50"
+            >
+              Create Account
+            </button>
+            <p class="have-account">
+              Already have an account?
+              <a href="/somewhere" class="have-account__link">Log in</a>
+            </p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Norse;
+  src: url("../assets/fonts/Norse-Bold.otf");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a,
+li,
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.mt--50 {
+  margin-top: 50px;
+}
+
+.mb--50 {
+  margin-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.bg-container {
+  flex-grow: 2;
+  background-image: url("../assets/images/bg.jpg");
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo__container--photo-credit {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+}
+
+.form-container {
+  flex-grow: 3;
+  padding: 100px;
+  width: 500px;
+}
+
+.form-container__primary-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.form-container__secondary-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.logo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40%;
+  background: rgba(0, 0, 0, 0.24);
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.logo__container img {
+  height: 50px;
+  width: 50px;
+}
+
+.logo__container h4 {
+  font-family: "Norse";
+  font-size: 50px;
+  color: #fff;
+}
+
+form {
+  background-color: #fff;
+}
+.form-group-1 {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-group-1 > div {
+  display: flex;
+  flex-basis: 40%;
+  margin-left: 0;
+  flex-direction: column;
+}
+
+.form-group-1 input {
+  border: 1px solid #e5e7eb;
+}
+
+.create-account-btn {
+  background-color: rgb(46, 39, 39);
+  padding: 5px;
+  padding-left: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.create-account-btn--text {
+  color: #fff;
+  font-weight: 500;
+}
+
+.focus:focus {
+  border: 1px solid rgb(9, 9, 15);
+  box-shadow: darkgoldenrod;
+}
